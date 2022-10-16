@@ -43,6 +43,7 @@
             this.search = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.Exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -193,14 +194,26 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Turquoise;
-            this.linkLabel1.Location = new System.Drawing.Point(162, 441);
+            this.linkLabel1.LinkColor = System.Drawing.Color.Tomato;
+            this.linkLabel1.Location = new System.Drawing.Point(376, 458);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(365, 24);
+            this.linkLabel1.Size = new System.Drawing.Size(288, 24);
             this.linkLabel1.TabIndex = 13;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Feeling Bored? let\'s have fun Drawing";
+            this.linkLabel1.Text = "Bored? let\'s have fun Drawing";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // Exit
+            // 
+            this.Exit.BackColor = System.Drawing.Color.Red;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(12, 458);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 34);
+            this.Exit.TabIndex = 14;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
             // mainFrame
             // 
@@ -210,6 +223,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(676, 504);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.search);
@@ -250,5 +264,6 @@
         private System.Windows.Forms.Button search;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button Exit;
     }
 }

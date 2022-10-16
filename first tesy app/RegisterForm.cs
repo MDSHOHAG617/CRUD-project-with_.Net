@@ -84,5 +84,11 @@ namespace first_tesy_app
             loginForm.Show();
             Hide();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+
+        }
     }
 }

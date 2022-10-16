@@ -35,13 +35,14 @@
             this.pass = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 32);
+            this.label1.Location = new System.Drawing.Point(130, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 24);
             this.label1.TabIndex = 11;
@@ -51,7 +52,7 @@
             // register
             // 
             this.register.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register.Location = new System.Drawing.Point(155, 226);
+            this.register.Location = new System.Drawing.Point(169, 226);
             this.register.Name = "register";
             this.register.Size = new System.Drawing.Size(92, 40);
             this.register.TabIndex = 10;
@@ -100,7 +101,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button1.Location = new System.Drawing.Point(47, 283);
+            this.button1.Location = new System.Drawing.Point(50, 272);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(331, 31);
             this.button1.TabIndex = 12;
@@ -108,11 +109,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Exit
+            // 
+            this.Exit.BackColor = System.Drawing.Color.Red;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(12, 375);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 34);
+            this.Exit.TabIndex = 13;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 361);
+            this.ClientSize = new System.Drawing.Size(434, 421);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.register);
@@ -137,5 +151,6 @@
         public System.Windows.Forms.Label username;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Exit;
     }
 }

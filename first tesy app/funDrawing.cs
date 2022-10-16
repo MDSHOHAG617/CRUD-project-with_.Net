@@ -59,5 +59,15 @@ namespace first_tesy_app
             y = -1;
             panel1.Cursor = Cursors.Default;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panel1.ForeColor=Color.White;
+        }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }

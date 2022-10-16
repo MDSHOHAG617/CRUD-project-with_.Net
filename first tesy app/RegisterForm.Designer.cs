@@ -35,6 +35,7 @@
             this.register = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // username
@@ -81,7 +82,7 @@
             // register
             // 
             this.register.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.register.Location = new System.Drawing.Point(155, 238);
+            this.register.Location = new System.Drawing.Point(165, 234);
             this.register.Name = "register";
             this.register.Size = new System.Drawing.Size(92, 40);
             this.register.TabIndex = 4;
@@ -103,7 +104,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.button1.Location = new System.Drawing.Point(49, 295);
+            this.button1.Location = new System.Drawing.Point(49, 280);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(331, 31);
             this.button1.TabIndex = 6;
@@ -111,11 +112,24 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // Form1
+            // Exit
+            // 
+            this.Exit.BackColor = System.Drawing.Color.Red;
+            this.Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Exit.Location = new System.Drawing.Point(12, 373);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(75, 34);
+            this.Exit.TabIndex = 14;
+            this.Exit.Text = "Exit";
+            this.Exit.UseVisualStyleBackColor = false;
+            this.Exit.Click += new System.EventHandler(this.Exit_Click);
+            // 
+            // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 361);
+            this.ClientSize = new System.Drawing.Size(434, 419);
+            this.Controls.Add(this.Exit);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.register);
@@ -123,7 +137,7 @@
             this.Controls.Add(this.namebox);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.username);
-            this.Name = "Form1";
+            this.Name = "RegisterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -141,6 +155,7 @@
         public System.Windows.Forms.TextBox passbox;
         public System.Windows.Forms.Button register;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Exit;
     }
 }
 

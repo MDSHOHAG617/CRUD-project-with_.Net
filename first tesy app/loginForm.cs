@@ -80,5 +80,10 @@ namespace first_tesy_app
             RegisterForm.Show();
             Hide();
         }
+
+        private void Exit_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.ExitThread();
+        }
     }
 }

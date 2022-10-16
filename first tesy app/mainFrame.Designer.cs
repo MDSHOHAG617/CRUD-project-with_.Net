@@ -138,6 +138,7 @@
             // Insert
             // 
             this.Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Insert.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Insert.Location = new System.Drawing.Point(153, 221);
             this.Insert.Name = "Insert";
             this.Insert.Size = new System.Drawing.Size(77, 37);
@@ -149,6 +150,7 @@
             // update
             // 
             this.update.BackColor = System.Drawing.Color.Cyan;
+            this.update.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.update.Location = new System.Drawing.Point(257, 221);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(77, 37);
@@ -160,6 +162,7 @@
             // delete
             // 
             this.delete.BackColor = System.Drawing.Color.Red;
+            this.delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delete.Location = new System.Drawing.Point(351, 221);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(77, 37);
@@ -171,6 +174,7 @@
             // search
             // 
             this.search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(450, 221);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(77, 37);
